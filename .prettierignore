@@ -1,3 +1,4 @@
 src/**/*.js
 test/**/*.js
 test/specs.json
+test/specs_test.json
