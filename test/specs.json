@@ -1,0 +1,234 @@
+{
+	"id": 0,
+	"name": "typedoc-plugin-banish",
+	"kind": 0,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 1,
+			"name": "\"index\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "%BASE%/project/index.ts",
+			"children": [
+				{
+					"id": 818,
+					"name": "Bar",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 819,
+							"name": "barMethod",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 820,
+									"name": "barMethod",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "This should also show up."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "test/project/index.ts",
+									"line": 12,
+									"character": 11
+								}
+							]
+						},
+						{
+							"id": 821,
+							"name": "fooMethod",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 822,
+									"name": "fooMethod",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "This should show up, but not stuff from HTMLElement."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 3,
+										"name": "Foo.fooMethod"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "test/project/index.ts",
+									"line": 5,
+									"character": 11
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 3,
+								"name": "Foo.fooMethod"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								819,
+								821
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "test/project/index.ts",
+							"line": 10,
+							"character": 16
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 2,
+							"name": "Foo"
+						}
+					]
+				},
+				{
+					"id": 2,
+					"name": "Foo",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 3,
+							"name": "fooMethod",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 4,
+									"name": "fooMethod",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "This should show up, but not stuff from HTMLElement."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "test/project/index.ts",
+									"line": 5,
+									"character": 11
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								3
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "test/project/index.ts",
+							"line": 1,
+							"character": 16
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "HTMLElement"
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"id": 818,
+							"name": "Bar"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						818,
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "test/project/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"kind": 1,
+			"children": [
+				1
+			]
+		}
+	]
+}
