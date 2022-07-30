@@ -1,3 +1,5 @@
+> Archived: TypeDoc's `exclude` option works like this in recent versions.
+
 # typedoc-plugin-banish
 
 A plugin for [TypeDoc](https://typedoc.org/) which filters reflections according to their declaration location, like `--exclude` but better since it also catches inherited items.
